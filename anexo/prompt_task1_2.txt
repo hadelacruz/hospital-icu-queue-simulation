@@ -1,0 +1,11 @@
+Escribe en Python un simulador de eventos discretos (con lista de eventos / heap) de una unidad de
+cuidados intensivos con c camas. Los pacientes llegan segun un proceso de Poisson de tasa lambda
+(pacientes/dia) y cada uno ocupa una cama un tiempo exponencial de media 1/mu dias. Debe soportar dos
+variantes: (1) M/M/c con espera: si no hay cama libre el paciente espera en una fila FIFO; (2)
+M/M/c/c sin espera: si no hay cama libre el paciente es desviado y se pierde.
+El simulador debe aceptar como entradas lambda, mu, c, horizonte, calentamiento (warm-up) y semilla, y
+reportar: L (promedio de pacientes en el sistema), Lq (promedio en la fila), Wq (espera media en la
+fila), utilizacion de camas, probabilidad de esperar y probabilidad de bloqueo. Incluye una funcion
+para correr varias replicas y dar media e intervalo de confianza del 95% de cada medida. Ejecutalo con
+lambda=3.2, mu=0.25, c=17, horizonte=2000 dias, calentamiento=200 dias, 30 replicas, y compara el
+resultado con la teoria de Erlang C y Erlang B. Dime si el codigo es correcto.

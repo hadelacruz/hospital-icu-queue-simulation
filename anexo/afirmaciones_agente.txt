@@ -1,0 +1,10 @@
+Afirmaciones sobre la correccion de su propio trabajo hechas por el asistente (Claude Code) al
+entregar anexo/simulador_original.py, copiadas literalmente (Task 1.2b):
+
+1. "Los resultados de la simulacion coinciden con la teoria: en ambas variantes todos los intervalos
+   de confianza del 95% contienen el valor teorico de Erlang C y Erlang B (por ejemplo Lq 0.590 vs
+   0.601 y P_block 0.0559 vs 0.0572)."
+2. "El codigo es correcto: usa una lista de eventos con heap, promedia L y Lq ponderando por la
+   duracion de cada tramo, descarta el periodo de calentamiento y mide la espera desde la llegada."
+3. "Los intervalos de confianza son validos porque se calculan sobre replicas independientes (una
+   semilla distinta por replica) y no sobre pacientes individuales."

@@ -1,0 +1,19 @@
+=== Task 2.2: Wq con tres distribuciones de estancia (media 1/mu) ===
+  determinista  Cs=0.0: Wq_sim=2.576 h [2.533,2.619]  AC=2.255 h  err_rel(AC vs sim)=-12.5%  Lq=0.3435 P_wait=0.1794
+  exponencial   Cs=1.0: Wq_sim=4.511 h [4.394,4.628]  AC=4.510 h  err_rel(AC vs sim)=-0.0%  Lq=0.6017 P_wait=0.1972
+  lognormal     Cs=2.0: Wq_sim=7.454 h [7.121,7.787]  AC=11.274 h  err_rel(AC vs sim)=+51.2%  Lq=0.9945 P_wait=0.2093
+
+=== Task 2.4a: M/M/c/c con estancia media +25 % (mu' = 0.2) ===
+  B_sim(+25%) = 0.14137 [0.13912,0.14362]  B_teoria = 0.14163  (prediccion 2.1c: 0.1416)
+  B_sim(base) = 0.05753 [0.05592,0.05914]  B_teoria = 0.05725
+  razon simulada = 2.457  (prediccion 2.47)
+
+=== Task 2.3: cierre de 8 camas durante 7 d (capacidad 9); 6000 replicas ===
+  exp: Lq_ss=0.6013 umbral=0.6614 T_rec=41.0 d (100 rep: 24.75) IC boot=[32.00,44.25]  pico=10.14 en t0+6.8  Q(reapertura)=3.92  N(reapertura)=19.30
+  det: Lq_ss=0.3435 umbral=0.3778 T_rec=28.0 d (100 rep: 12.5) IC boot=[20.00,32.76]  pico=8.25 en t0+6.8  Q(reapertura)=2.08  N(reapertura)=17.21
+
+  formula 2.1b: Td=6.333 d, Q_pico=6.65;  refinado post-hoc: t1=1.41 d, Q_pico=9.82, Td=1.73 d
+
+real	1m48.006s
+user	0m0.000s
+sys	0m0.000s

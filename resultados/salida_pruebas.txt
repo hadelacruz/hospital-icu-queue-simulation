@@ -1,0 +1,39 @@
+[T1 un paciente (L ponderado por tiempo)] esperado={'L': 0.3, 'util': 0.3, 'Lq': 0.0, 'P_block': 0.0}
+    original : OK  {'L': 0.3, 'util': 0.3, 'Lq': 0.0, 'P_block': 0.0}
+    corregido: OK  {'L': 0.3, 'util': 0.3, 'Lq': 0.0, 'P_block': 0.0}
+[T2 calentamiento: solo (4,10]] esperado={'L': 0.1667, 'util': 0.1667}
+    original : OK  {'L': 0.1667, 'util': 0.1667}
+    corregido: OK  {'L': 0.1667, 'util': 0.1667}
+[T3 paciente dentro al terminar el horizonte] esperado={'L': 0.2, 'util': 0.2}
+    original : FALLA {'L': 0.0, 'util': 0.0}
+    corregido: OK  {'L': 0.2, 'util': 0.2}
+[T4 M/M/1/1 determinista (bloqueo)] esperado={'P_block': 0.3333, 'L': 0.3}
+    original : OK  {'P_block': 0.3333, 'L': 0.3}
+    corregido: OK  {'P_block': 0.3333, 'L': 0.3}
+[T5 D/D/1 (una cama)] esperado={'Wq': 2.25, 'Lq': 1.35, 'L': 2.25, 'util': 0.9, 'P_wait': 0.9}
+    original : FALLA {'Wq': 1.5, 'Lq': 1.35, 'L': 2.25, 'util': 0.9, 'P_wait': 0.9}
+    corregido: OK  {'Wq': 2.25, 'Lq': 1.35, 'L': 2.25, 'util': 0.9, 'P_wait': 0.9}
+[T6 cierre parcial (c=1, k_off=1)] esperado={'Wq': 2.0, 'W': 3.0, 'Lq': 0.2, 'L': 0.3}
+    original : N/A
+    corregido: OK  {'Wq': 2.0, 'W': 3.0, 'Lq': 0.2, 'L': 0.3}
+
+[T7] M/M/1 (lam=1, mu=2): teoria Lq=0.5, Wq=0.5, L=1, P_wait=0.5
+   Lq: 0.5025 [0.4945,0.5105] teoria 0.5 -> dentro
+   Wq: 0.5023 [0.4948,0.5098] teoria 0.5 -> dentro
+   L: 1.0025 [0.9930,1.0119] teoria 1.0 -> dentro
+   P_wait: 0.5010 [0.4988,0.5032] teoria 0.5 -> dentro
+[T7b] M/M/1/1 (a=1): P_block 0.4983 [0.4968,0.4998] teoria 0.5
+
+[T8] cobertura del IC95% para L (M/M/17/17, L teorica=12.0672) con n_rep=5, 300 lotes
+   original : 0.873   corregido: 0.960   (nominal 0.95; EE ~ 0.013)
+
+[T9] original: corridas con semilla base 1 y base 2 comparten 29 de 30 replicas identicas
+     autocorrelacion lag-1 de L entre semillas consecutivas (400 replicas): 0.014 (EE~0.05)
+
+[T10] sesgo de censura al fin del horizonte (M/M/17, H=100, W=20, 400 replicas)
+   Wq: con vaciado 0.2131  censurado 0.2109  dif rel -1.00%  (teoria 0.1879)
+   L: con vaciado 13.5170  censurado 13.5170  dif rel +0.00%  (teoria 13.4013)
+   Lq: con vaciado 0.7105  censurado 0.7105  dif rel +0.00%  (teoria 0.6013)
+   P_wait: con vaciado 0.2009  censurado 0.2009  dif rel +0.00%  (teoria 0.1973)
+
+[T11] M/M/c/c: L=12.0533, lam_ef*W=12.0542 (err 0.01%), lam*W=12.7874 (err 6.09%)

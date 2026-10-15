@@ -1,0 +1,22 @@
+=== variante wait ===
+  L        media=13.40817  IC95%=[13.33141, 13.48493]  teoria=13.40127  dentro=True
+  Lq       media=0.59707  IC95%=[0.55770, 0.63643]  teoria=0.60127  dentro=True
+  Wq       media=0.18630  IC95%=[0.17425, 0.19836]  teoria=0.18790  dentro=True
+  W        media=4.18692  IC95%=[4.16681, 4.20703]  teoria=4.18790  dentro=True
+  util     media=0.75359  IC95%=[0.75095, 0.75624]  teoria=0.75294  dentro=True
+  P_wait   media=0.19619  IC95%=[0.19051, 0.20188]  teoria=0.19729  dentro=True
+  P_block  media=0.00000  IC95%=[0.00000, 0.00000]  teoria=0.00000  dentro=True
+  lam_ef   media=3.20234  IC95%=[3.19576, 3.20893]  teoria=3.20000  dentro=True
+  Little L = lam_ef W : L=13.4082 lam_ef*W=13.4084 err rel (medias)=0.002%  err rel medio por replica=0.052% (max 0.206%)
+  Little Lq = lam_ef Wq : Lq=0.5971 lam_ef*Wq=0.5966 err rel (medias)=0.077%  err rel medio por replica=0.079%
+=== variante loss ===
+  L        media=12.07178  IC95%=[12.04354, 12.10003]  teoria=12.06725  dentro=True
+  Lq       media=0.00000  IC95%=[0.00000, 0.00000]  teoria=0.00000  dentro=True
+  Wq       media=0.00000  IC95%=[0.00000, 0.00000]  teoria=0.00000  dentro=True
+  W        media=4.00497  IC95%=[3.99572, 4.01423]  teoria=4.00000  dentro=True
+  util     media=0.71010  IC95%=[0.70844, 0.71177]  teoria=0.70984  dentro=True
+  P_wait   media=0.00000  IC95%=[0.00000, 0.00000]  teoria=0.00000  dentro=True
+  P_block  media=0.05762  IC95%=[0.05637, 0.05887]  teoria=0.05725  dentro=True
+  lam_ef   media=3.01431  IC95%=[3.00933, 3.01930]  teoria=3.01681  dentro=True
+  Little L = lam_ef W : L=12.0718 lam_ef*W=12.0721 err rel (medias)=0.004%  err rel medio por replica=0.030% (max 0.095%)
+  (con lambda en vez de lam_ef: lam*W=12.8159, err rel 6.16%)

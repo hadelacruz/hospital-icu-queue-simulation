@@ -1,0 +1,11 @@
+{
+ "Q_pre_max": 0.0,
+ "Q_pico": 8.0,
+ "t_Q0": 2.7284841053187847e-12,
+ "t_last_Qpos": 3.9500000000036266,
+ "Q_reap_media": 10.30225,
+ "Q_reap_sd": 6.616860331581884,
+ "busy_reap": 8.90225,
+ "exceso_medio": 3.90925,
+ "p_vacia_al_reabrir": 0.426
+}

@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Archivos intermedios de LaTeX (se conserva el .tex; el PDF final se sube a Canvas)
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+
+# Duplicados / regenerables (el .tex usa los PDF de figuras/)
+figuras/*.png
+resultados/*.npz
+
+# Enunciado de la hoja (no es parte de la entrega)
+hoja de trabajo 7.md
+
+# Editor / sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
